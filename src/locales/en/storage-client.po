@@ -4,6 +4,12 @@ msgstr "You don't have access to that action. Please contact your Administrator 
 msgid "bandwidth-query-failed"
 msgstr "Bucket bandwidth query failed"
 
+msgid "clear-all"
+msgstr "Clear All"
+
+msgid "clear-all-invalid"
+msgstr "Clear All Invalid Tags"
+
 msgid "confirm-delete"
 msgstr "Delete"
 
@@ -156,6 +162,9 @@ msgstr "Values for a Lookup Tag must all be unique."
 
 msgid "tag-definition-confirm-delete"
 msgstr "This Tag is about to be permanently deleted and it cannot be recovered"
+
+msgid "tag-invalid-msg"
+msgstr "The highlighted Tags are no longer available and must be first deleted to proceed."
 
 msgid "title"
 msgstr "Rise Vision Storage"
