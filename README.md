@@ -79,6 +79,26 @@ Your Angularjs module will need to have a reference to *risevision.common.i18n*:
 
     angular.module("my-module", ["risevision.common.i18n"]);
 
+### Adding translation strings while developing a widget
+
+Various widget source code trees refer to this this source code tree. The `bower install` command draws this
+source tree into the widget's directory structure, typically at the subdirectory
+`src/components/rv-common-i18n`.  
+
+If you are developing in English (`en`), the message file for your widget can be found at 
+
+    src/components/rv-common-i18n/src/locales/en/YourWidgetName.po
+    
+You can edit this file as needed to create the translation messages mentioned in your widget's `settings.html` and other
+angular.js files.  Then you'll need to compile the message files before using them. The `.po` message files are translated
+ and concatenated into files with names like `rv-common-i18n/dist/locales/translation_en.json` by running `gulp build` in the
+ `src/components/rv-common-i18n` directory.
+ 
+ If your widget displays with translation string identifiers (for example, `forecast.forecast-day.font.label`) instead
+ of the actual text strings (for example, *Forecast Day Font*), that 
+ means you have not put your `WidgetName.po` file into the right place, or you have not compiled the
+ message files.
+
 ### Dependencies
 - Angularjs
 - Angular translate
